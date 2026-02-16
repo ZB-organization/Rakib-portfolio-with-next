@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Preloader } from "@/components/Preloader";
 import { FilterProvider } from "@/context/FilterContext";
+import PlatformURLSync from "@/context/PlatformURLSync";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,6 +67,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
         <FilterProvider>
+          <PlatformURLSync />
           <Preloader />
           <div className="flex min-h-screen flex-col bg-white transition-colors duration-300 dark:bg-slate-900">
             <Header />
