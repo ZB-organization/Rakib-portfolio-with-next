@@ -79,7 +79,7 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-100 font-['Inter'] text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <div className="min-h-screen bg-slate-100   text-slate-900 dark:bg-slate-950 dark:text-slate-100">
       {/* HEADER / BREADCRUMB AREA */}
       <div className="bg-white pb-12 pt-24 shadow-sm dark:bg-slate-900">
         <div className="mx-auto max-w-7xl px-6">

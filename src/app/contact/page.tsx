@@ -351,7 +351,7 @@ export default function Contact() {
 
   return (
     // haha
-    <div className="min-h-screen bg-slate-50 transition-colors duration-300 dark:bg-slate-900 font-['Inter']">
+    <div className="min-h-screen bg-slate-50 transition-colors duration-300 dark:bg-slate-900  ">
       {/* Header Space */}
       <section className="border-b border-slate-100 bg-white pt-28 pb-10 dark:border-slate-800 dark:bg-slate-900 transition-colors sm:pt-32 md:pt-40 md:pb-12">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
