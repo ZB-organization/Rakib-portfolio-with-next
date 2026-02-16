@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Footer from "@/components/Footer";
@@ -8,10 +7,11 @@ import { Preloader } from "@/components/Preloader";
 import { FilterProvider } from "@/context/FilterContext";
 import PlatformURLSync from "@/context/PlatformURLSync";
 
-const inter = Inter({
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -65,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`!${spaceGrotesk.className}`}>
         <FilterProvider>
           <PlatformURLSync />
           <Preloader />

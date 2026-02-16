@@ -45,7 +45,7 @@ export const Preloader = () => {
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-2xl font-bold tracking-widest font-mono"
+                className="text-2xl font-bold tracking-widest"
               >
                 LOADING
               </motion.h1>

@@ -221,7 +221,7 @@ const Projects: React.FC<{ hideHeader?: boolean }> = ({
 
   return (
     <section
-      className={`py-24 transition-colors duration-300   ${hideHeader ? "" : "bg-white dark:bg-slate-950 min-h-screen"}`}
+      className={`py-24 transition-colors duration-300  ${hideHeader ? "" : "bg-white dark:bg-slate-950 min-h-screen"}`}
     >
       <div className="max-w-[1440px] mx-auto px-6">
         {/* Header */}

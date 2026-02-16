@@ -20,10 +20,10 @@ const HeroImage = ({ src, alt }: { src: string; alt: string }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    // 1. HARD-CODED ASPECT RATIO: This div reserves the space immediately.
-    // It creates a grey box before the image even exists in the DOM.
+    /* 1. HARD-CODED ASPECT RATIO: Reserves space immediately */
     <div className="relative z-10 w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 border-8 border-white dark:border-slate-800 bg-slate-200 dark:bg-slate-800">
-      {/* 2. SKELETON: This runs while image is loading */}
+      
+      {/* 2. SKELETON: Runs while image is loading */}
       <div
         className={`absolute inset-0 bg-slate-200 dark:bg-slate-700 animate-pulse transition-opacity duration-500 
         ${isLoaded ? "opacity-0" : "opacity-100"}`}
@@ -81,6 +81,7 @@ const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12">
+          
           {/* --- TEXT CONTENT --- */}
           <div
             key={platform}
@@ -117,9 +118,7 @@ const Hero: React.FC = () => {
               {current.titleStart}{" "}
               <span
                 className={`gradient-text ${
-                  platform === "shopify"
-                    ? " text-green-700 dark:text-green-400"
-                    : "  text-blue-700 dark:text-blue-400"
+                  platform === "wordpress" ? "from-blue-600 to-indigo-600" : ""
                 }`}
               >
                 {current.titleHighlight}
@@ -155,25 +154,13 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex items-center justify-center lg:justify-start space-x-6 text-slate-400">
-              <a
-                href="#"
-                className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-                aria-label="Twitter"
-              >
+              <a href="#" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" aria-label="Twitter">
                 <Twitter size={24} />
               </a>
-              <a
-                href="#"
-                className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="#" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" aria-label="LinkedIn">
                 <Linkedin size={24} />
               </a>
-              <a
-                href="#"
-                className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-                aria-label="GitHub"
-              >
+              <a href="#" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" aria-label="GitHub">
                 <Github size={24} />
               </a>
             </div>
@@ -181,7 +168,6 @@ const Hero: React.FC = () => {
 
           {/* --- IMAGE & STATS --- */}
           <div className="flex-1 relative min-w-0">
-            {/* USAGE: Using the new Component here */}
             <HeroImage
               src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=600"
               alt="Ecommerce Growth"
@@ -204,12 +190,8 @@ const Hero: React.FC = () => {
                   {current.statIcon}
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-slate-900 dark:text-white">
-                    50+
-                  </div>
-                  <div className="text-sm text-slate-500 dark:text-slate-400">
-                    {current.statLabel}
-                  </div>
+                  <div className="text-2xl font-bold text-slate-900 dark:text-white">50+</div>
+                  <div className="text-sm text-slate-500 dark:text-slate-400">{current.statLabel}</div>
                 </div>
               </div>
             </div>
@@ -221,12 +203,8 @@ const Hero: React.FC = () => {
                   <Globe size={24} />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-slate-900 dark:text-white">
-                    $10M+
-                  </div>
-                  <div className="text-sm text-slate-500 dark:text-slate-400">
-                    Client Revenue
-                  </div>
+                  <div className="text-2xl font-bold text-slate-900 dark:text-white">$10M+</div>
+                  <div className="text-sm text-slate-500 dark:text-slate-400">Client Revenue</div>
                 </div>
               </div>
             </div>
