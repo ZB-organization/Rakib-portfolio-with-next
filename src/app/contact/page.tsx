@@ -350,6 +350,7 @@ export default function Contact() {
   };
 
   return (
+    // haha
     <div className="min-h-screen bg-slate-50 transition-colors duration-300 dark:bg-slate-900 font-['Inter']">
       {/* Header Space */}
       <section className="border-b border-slate-100 bg-white pt-28 pb-10 dark:border-slate-800 dark:bg-slate-900 transition-colors sm:pt-32 md:pt-40 md:pb-12">
