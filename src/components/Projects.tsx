@@ -316,7 +316,7 @@ const Projects: React.FC<{ hideHeader?: boolean }> = ({
                 <ProjectCard
                   key={project.id}
                   project={project}
-                  index={index}
+                 
                   isShopify={isShopify}
                 />
               ))}
