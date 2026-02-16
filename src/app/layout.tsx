@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://rakibulhashan.com",
     siteName: "Rakibul Hashan Portfolio",
     title: "Rakibul Hashan | Shopify & WordPress Expert",
     description:

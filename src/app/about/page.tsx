@@ -16,7 +16,8 @@ export default function About() {
           accentBg: "bg-emerald-600 dark:bg-emerald-500",
           icon: <ShoppingBag size={20} />,
           button: "bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500",
-          gradient: "gradient-text",
+          gradient:
+            "text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-500",
         },
         profile: {
           specialization: "Shopify Plus Expert",

@@ -170,7 +170,7 @@ const Services: React.FC = () => {
 
                       <Link
                         href="/contact"
-                        className={`group flex items-center gap-2 rounded-xl px-6 py-3 text-sm sm:text-base font-bold shadow-lg transition-all hover:scale-105 active:scale-95 ${theme.accent}`}
+                        className={`group flex items-center gap-1 rounded-xl px-2 py-2 text-sm sm:text-base font-bold shadow-lg transition-all hover:scale-105 active:scale-95 ${theme.accent}`}
                       >
                         Start Project
                         <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
